@@ -50,26 +50,23 @@ class _NoticeListPageState extends State<NoticeList>{
 
   loadNotices() async{
 
-    List result = await repository.loadNews();
+    List<Map<String, Map<String, dynamic>>> results = await repository.loadNews();
 
     setState(() {
 
-      result.forEach((item) {
 
+      for (final row in results) {
         var notice = new Notice(
-            item['url_img'],
-            item['tittle'],
-            item['date'],
-            item['description']
+          row["notices"]["url_img"],
+          row["notices"]["tittle"],
+          row["notices"]["date"],
+          row["notices"]["description"]
         );
 
 
         _news.add(notice);
 
-      });
-
-    });
-
-  }
-
+      }
+  });
+}
 }
