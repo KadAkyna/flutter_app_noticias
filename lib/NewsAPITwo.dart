@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 class NewsApiTwo{
 
-  String url = "https://raw.githubusercontent.com/RafaelBarbosatec/tutorial_flutter_medium/master/api/news.json";
+  String url = "https://raw.githubusercontent.com/KadAkyna/flutter_app_noticias/master/lib/json/file.json";
 
   Future <List> loadNews() async{
     // Make a HTTP GET request to the CoinMarketCap API.

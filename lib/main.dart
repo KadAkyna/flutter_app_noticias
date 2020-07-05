@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'widgets/home.dart';
 import 'NoticeList.dart';
 
 void main() => runApp(new NewsApp());
