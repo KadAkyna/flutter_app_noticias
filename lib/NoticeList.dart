@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Notice.dart';
-import 'NewsApi.dart';
+import 'NewsApiTwo.dart';
 
 class NoticeList extends StatefulWidget{
 
@@ -14,7 +14,7 @@ class NoticeList extends StatefulWidget{
 class _NoticeListPageState extends State<NoticeList>{
 
   List _news = new List();
-  var repository = new NewsApi();
+  var repository = new NewsApiTwo();
 
   @override
   Widget build(BuildContext context) {
